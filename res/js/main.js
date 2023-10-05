@@ -6,6 +6,8 @@ const banana = document.getElementById("banana");
 const farmaUpgrade = document.getElementById("farmaUpgrade");
 const farmacounter = document.getElementById("farmacounter");
 const farmacounterlevel = document.getElementById("farmacounterlevel");
+const autoclickercounterlevel = document.getElementById("autoclickercounterlevel");
+const autoclickercounter = document.getElementById("autoclickercounter");
 
 let numberOfCookies = 0;
 let costOfclickUpgrade = 20;
@@ -13,6 +15,7 @@ let clickUpgradeIncrease = 1;
 let autoclickIncrease = 0;
 let autoclicker;
 let autoclickerCost = 100;
+let autoclickerlevel=0;
 
 
 let farmaUpgradeIncrease = 0;
@@ -92,9 +95,12 @@ autoclickerUpgrade.onclick = () => {
         numberOfCookies -= autoclickerCost;
         autoclickerCost *=2;
         autoclickerUpgrade.innerText = "Buy autoclicker upgrade:" +autoclickerCost;
+        autoclickerlevel++;
+        autoclickercounterlevel.innerText = "Autocliker level:" +autoclickerlevel;
         //numberOfCookies = numberOfCookies - 100;        delší způsob
         //odecist sušenky
         //aktualizovat odstavec se susenky
+        autoclickercounter.innerText= "Autoclicker price: " +autoclickerCost;
         counter.innerText = "Cookies" + numberOfCookies;
         autoclickIncrease++;
         //clear
@@ -124,11 +130,11 @@ farmaUpgrade.onclick = () => {
         farmaUpgradeCost +=5000;
         farmaUpgrade.innerText = "Buy Farmaupgrade:" +farmaUpgradeCost;
         farmalevel++;
-        farmacounterlevel.innerText = "Buy Farmaupgrade:" +farmalevel;
+        farmacounterlevel.innerText = "Farm level:" +farmalevel;
         //numberOfCookies = numberOfCookies - 100;        delší způsob
         //odecist sušenky
         //aktualizovat odstavec se susenky
-        farmacounter.innerText= "farma price: " +farmaUpgradeCost;
+        farmacounter.innerText= "Farm price: " +farmaUpgradeCost;
         counter.innerText = "Cookies" + numberOfCookies;
         farmaUpgradeIncrease+=5000;
         //clear

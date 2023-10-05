@@ -66,7 +66,8 @@ html {
 .obchod{
     width: 30%;
     border: 5px solid black;
-    
+    background-image: url(/res/img/backgroundobchod.jpg);
+    background-size: cover;
    position: absolute;
    top:0px;
    left:0px;
@@ -78,11 +79,13 @@ html {
 .farma{
     max-width: 20%;
     max-height: 20%;
+    padding-left: 1em;
 }
 .image{
     max-width: 20%;
     max-height: 20%;
+    padding-left: 1em;
 }
 #farmacounter{
-    
+
 }
