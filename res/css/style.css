@@ -66,7 +66,7 @@ html {
 .obchod{
     width: 30%;
     border: 5px solid black;
-    background-image: url(/res/img/backgroundobchod.jpg);
+    background-image: url(../img/backgroundobchod.jpg);
     background-size: cover;
    position: absolute;
    top:0px;
