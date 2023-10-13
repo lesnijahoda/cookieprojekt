@@ -94,18 +94,8 @@ html {
     max-width: 20%;
     
 }
-<<<<<<< HEAD
-.ceny{
-    margin-right: auto;
-    position: absolute;
-    background-image: url(/res/img/backgroundprices.avif);
-    background-size: cover;
-    top:0px;
-  width: 25%;
-   right: 0px;
-   bottom:0px;
-   overflow:auto;
-}
+
+
 .a{
     max-height: 20%;
     display: flex;
@@ -113,5 +103,3 @@ html {
 .b{
    margin: 1em;
 }
-=======
->>>>>>> d4908b3eeacdb62267e9e402681cb6ff98730db7
