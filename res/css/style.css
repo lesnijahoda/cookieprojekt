@@ -69,7 +69,7 @@ html {
     
     width: 30%;
     border: 5px solid black;
-    background-image: url(/res/img/backgroundobchod.jpg);
+    background-image: url(../img/backgroundobchod.jpg);
     background-size: cover;
    position: absolute;
    top:0px;
@@ -94,6 +94,7 @@ html {
     max-width: 20%;
     
 }
+<<<<<<< HEAD
 .ceny{
     margin-right: auto;
     position: absolute;
@@ -112,3 +113,5 @@ html {
 .b{
    margin: 1em;
 }
+=======
+>>>>>>> d4908b3eeacdb62267e9e402681cb6ff98730db7
