@@ -11,7 +11,7 @@ const autoclickercounter = document.getElementById("autoclickercounter");
 const  mineUpgrade= document.getElementById("mineUpgrade");
 const  minecounter= document.getElementById("minecounter");
 const  minecounterlevel= document.getElementById("minecounterlevel");
-
+const  clickcounter= document.getElementById("clickcounter");
 
 let numberOfCookies = 0;
 let costOfclickUpgrade = 20;
@@ -82,6 +82,8 @@ const clickUpgradeFunction = () => {
         clickUpgradeIncrease+=10;
         costOfclickUpgrade += 100;
         clickUpgrade.innerText = "Buy clickupgrade:" +costOfclickUpgrade;
+
+        clickcounter.innerText= "Click price: " +costOfclickUpgrade;
     }
 };
 
@@ -164,11 +166,11 @@ mineUpgrade.onclick = () => {
         mineUpgradeCost +=50000;
         mineUpgrade.innerText = "Buy Farmaupgrade:" +mineUpgradeCost;
         minelevel++;
-        minecounterlevel.innerText = "Farm level:" +minelevel;
+        minecounterlevel.innerText = "Mine level:" +minelevel;
         //numberOfCookies = numberOfCookies - 100;        delší způsob
         //odecist sušenky
         //aktualizovat odstavec se susenky
-        minecounter.innerText= "Farm price: " +mineUpgradeCost;
+        minecounter.innerText= "Mine price: " +mineUpgradeCost;
         counter.innerText = "Cookies: " + numberOfCookies;
         mineUpgradeIncrease+=70000;
         //clear

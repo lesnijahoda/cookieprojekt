@@ -87,7 +87,7 @@ html {
     cursor: pointer;
 }
 
-#farmacounter, #farmacounterlevel, #autoclickercounter , #autoclickercounterlevel, #minecounter, #minecounterlevel{
+#farmacounter, #farmacounterlevel, #autoclickercounter , #autoclickercounterlevel, #minecounter, #minecounterlevel, #clickcounter{
     color: black;
     font-size: 140%;
     padding-left: 2em;
